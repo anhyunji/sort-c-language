@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int arr[100010]; ////////여유있게 10더해서 저장해줌
+int arr[100010]; 
 int n, i, j;
 
 void insertion_sort();
@@ -15,13 +15,13 @@ int main() {
 
 	srand((unsigned)time(NULL));
 	for (i = 0; i < 100000; i++) {
-		arr[i] = rand();                  //////렌덤으로 10만개 난수 생성
+		arr[i] = rand();                  //////create 100,000 data randomly
 
 	}
 
 	cout << "array Before  InsertionSort" << "\n";
 	for (i = 0; i < 100000; i++)
-		cout << setw(2) << arr[i] << " ";            /////////////정렬되기 전 데이터 10만개 출력
+		cout << setw(2) << arr[i] << " ";            /////////////print 100,000 date before sorting
 	cout << "\n";
 
 
@@ -29,7 +29,7 @@ int main() {
 
 	cout << "array After InsertionSort" << "\n";
 	for (i = 0; i < 100000; i++)
-		cout << setw(2) << arr[i] << " ";             /////////////정렬 후 데이터 10만개 출력
+		cout << setw(2) << arr[i] << " ";             /////////////print 100,000 date after sorting
 	cout << "\n";
 
 	return 0;
