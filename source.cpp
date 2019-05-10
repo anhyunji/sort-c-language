@@ -30,7 +30,7 @@ int main() {
 
 	cout << "array After QuickSort" << "\n";
 	for (i = 0; i < 100000; i++)
-		cout << setw(2) << arr[i] << " ";			/////////////print 100,000 date after sorting
+		cout << setw(2) << arr[i] << " ";			////////////print 100,000 date after sorting
 	cout << "\n";
 
 	return 0;
