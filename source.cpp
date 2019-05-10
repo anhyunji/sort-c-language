@@ -15,22 +15,22 @@ int main() {
 
 	srand((unsigned)time(NULL));   
 	for (i = 0; i < 100000; i++) {
-		arr[i] = rand();                  //////·»´ýÀ¸·Î 10¸¸°³ ³­¼ö »ý¼º
+		arr[i] = rand();                  //////create 100,000 data randomly
 
 	}
 
 	cout << "array Before  QuickSort" << "\n";
 	//for (i = 0; i < 100000; i++)
-		//cout << setw(2) << arr[i] << " ";            /////////////Á¤·ÄµÇ±â Àü µ¥ÀÌÅÍ 10¸¸°³ Ãâ·Â
+		//cout << setw(2) << arr[i] << " ";            /////////////print 100,000 date before sorting
 	cout << "\n";
 
-	quick_sort(0,99999); //do quick sort 0¹øÂ° indexºÎÅÍ 99999±îÁö
+	quick_sort(0,99999); //do quick sort 0ë²ˆì§¸ indexë¶€í„° 99999ê¹Œì§€
 
 
 
 	cout << "array After QuickSort" << "\n";
 	for (i = 0; i < 100000; i++)
-		cout << setw(2) << arr[i] << " ";			/////////////Á¤·Ä ÈÄ µ¥ÀÌÅÍ 10¸¸°³ Ãâ·Â
+		cout << setw(2) << arr[i] << " ";			/////////////print 100,000 date after sorting
 	cout << "\n";
 
 	return 0;
